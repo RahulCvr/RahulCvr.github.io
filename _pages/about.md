@@ -20,10 +20,10 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hey! <br>
+`Hey!` <br>
 Let me tell you something about myself :
 <ul>
-  <li>I'm a 21 y/o CSE undergrad student at GRIET, India</li>
+  <li>I'm a 21 y/o `CSE` undergrad student at GRIET, India</li>
   <li>I'm currently in my final year of pursuing a Bachelor of Technology in Computer Science and Engineering.</li>
   <li> By day, you might find me studying machine learning, system design, and behavioural sciences</li>
   <li> By night, I love exploring different fields of study, reading case studies, or reading a book </li>
