@@ -45,13 +45,13 @@
 
               <!-- About -->
               <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-                <a class="nav-link" href="{{ '/' | relative_url }}">{{ about_title }}
+                <a class="nav-link" href="{{ '/' | relative_url }}">{{ 'Home' }}
                   {%- if page.permalink == '/' -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
                 </a>
               </li>
-              {% if site.blog_nav_title %}
+              {% if site.blog_nav_title == false %} <!-- remove false to get blog page back-->
               <!-- Blog -->
               <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
                 <a class="nav-link" href="{{ '/blog/' | relative_url }}">{{ site.blog_nav_title }}
