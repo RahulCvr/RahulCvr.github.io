@@ -5,7 +5,7 @@
 # NOTE: it looks like you need to rebuild + repush everytime you update this _config.yml file
 
 ### Site Settings ###
-title               : IS445 Jekyll Template 
+title               : C V Rahul Reddy
 description         : >-
                       I am definitely not a corgi!
 baseurl             : ""   # Change to empty quotes if you are hosting your site at <your-username>.github.io directly,
@@ -34,13 +34,13 @@ nav_exclude:                                            # The following paths ar
 
 ### Author Info ###
 author:
-  name              : A. P. Corgi
+  name              : C V Rahul
   image             : https://source.unsplash.com/300x300/?corgi&derpy
 #  behance           : your_username
 # dribbble          : your_username
   email             : username@domain.com
 #  facebook          : your_username
-  github            : jnaiman # JPN
+  github            : RahulCvr # JPN
 # gitlab            : your_username
 # instagram         : your_username
 # kaggle            : your_username
