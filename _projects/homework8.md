@@ -47,11 +47,11 @@ This bar chart visualizes the count of businesses based on the presence or absen
 <!-- these are written in a combo of html and liquid --> 
 
 <div class="left">
-{% include elements/button.html link="https://github.com/vega/vega/blob/main/docs/data/cars.json" text="The Data" %}
+{% include elements/button.html link="https://github.com/RahulCvr/RahulCvr.github.io/blob/main/assets/json/viz1.json" text="The Data" %}
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://github.com/jnaiman/online_cv_public/blob/main/python_notebooks/test_generate_plots.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://github.com/RahulCvr/RahulCvr.github.io/blob/main/python_notebooks/Viz1.ipynb" text="The Notebook" %}
 </div>
 
 <br>
@@ -94,9 +94,9 @@ This pie chart visualizes the distribution of license types in a dataset, with t
 <!-- these are written in a combo of html and liquid --> 
 
 <div class="left">
-{% include elements/button.html link="https://github.com/vega/vega/blob/main/docs/data/cars.json" text="The Data" %}
+{% include elements/button.html link="https://github.com/RahulCvr/RahulCvr.github.io/blob/main/assets/json/viz2.json" text="The Data" %}
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://github.com/jnaiman/online_cv_public/blob/main/python_notebooks/test_generate_plots.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://github.com/RahulCvr/RahulCvr.github.io/blob/main/python_notebooks/Viz2.ipynb" text="The Notebook" %}
 </div>
