@@ -2,7 +2,7 @@
 name: HomeWork 8
 tools: [Python, HTML, vega-lite]
 image: assets/pngs/h8.png
-description: This is a "showcase" project that uses vega-lite for interactive viz!
+description: Homework 8 for IS 455
 custom_js:
   - vega.min
   - vega-lite.min
