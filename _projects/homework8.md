@@ -39,8 +39,7 @@ This bar chart visualizes the count of businesses based on the presence or absen
 - The count of businesses is calculated based on the presence or absence of a business name.
 
 #### Interactivity:
-- The chart is static without specific interactivity for simplicity.
-- Additional interactivity (e.g., selection) can be added based on specific needs.
+- Tooltips are enabled for focused analysis which showcases the name and its count, when the cursor is placed on top of it.
 
 
 
