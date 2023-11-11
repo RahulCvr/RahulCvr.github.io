@@ -2,7 +2,7 @@
 name: HomeWork 8
 tools: [Python, HTML, vega-lite]
 image: assets/pngs/h8.png
-description: Homework 8 for IS 455
+description: Homework 8 for IS 445
 custom_js:
   - vega.min
   - vega-lite.min
