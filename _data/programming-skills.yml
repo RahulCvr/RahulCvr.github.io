@@ -1,14 +1,14 @@
 - name: Python
   percentage: 80
   level: Advanced
-  color: green
+  color: success
 
 - name: Java
   percentage: 90
   level: Advanced
-  color: danger
+  color: success
 
 - name: R-Programming
   percentage: 70
   level: Intermediate
-  color: secondary
+  color: info
