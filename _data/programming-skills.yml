@@ -1,14 +1,14 @@
-- name: HTML5/CSS3
+- name: Python
+  percentage: 80
+  level: Advanced
+  color: green
+
+- name: Java
   percentage: 90
-  level: Expert
+  level: Advanced
   color: danger
 
-- name: Go
-  percentage: 5
-  level: Beginner
-  color:
-
-- name: Python
-  percentage: 90
-  level: Expert
+- name: R-Programming
+  percentage: 70
+  level: Intermediate
   color: secondary
