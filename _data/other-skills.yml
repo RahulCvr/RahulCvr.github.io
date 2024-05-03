@@ -1,19 +1,14 @@
-- name: Tableau
-  percentage: 70
-  level: Intermediate
-  color: info
+- name: Data Visualization
+  percentage: 85
+  level: Advanced
+  color: success
 
-- name: PowerBi
-  percentage: 70
-  level: Intermediate
-  color: info
-
-- name: AWS
+- name: MLOps / Cloud
   percentage: 50
   level: Beginner
   color: info
 
 - name: Git
   percentage: 85
-  level: Expert
+  level: Advanced
   color: success
