@@ -1,10 +1,10 @@
 - name: Python
-  percentage: 80
+  percentage: 90
   level: Advanced
   color: success
 
 - name: Java
-  percentage: 90
+  percentage: 80
   level: Advanced
   color: success
 
