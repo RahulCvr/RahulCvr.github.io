@@ -1,7 +1,7 @@
 ---
 name: Student Companion App
 tools: [React-native, FireBase]
-image: assets/pngs/h8.png
+image: assets/pngs/studentapp.png
 description: "Insert from proposal"
 custom_js: 
 ---
