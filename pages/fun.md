@@ -1,11 +1,8 @@
 ---
-layout: default
+layout: page
 title: Fun
 permalink: /fun/
 weight: 2
-remote_projects:
-  - is507_spring2021
-  - online_cv_public
 ---
 
 What do I do other than work?
