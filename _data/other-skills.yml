@@ -4,8 +4,8 @@
   color: success
 
 - name: MLOps / Cloud
-  percentage: 50
-  level: Beginner
+  percentage: 70
+  level: Intermediate
   color: info
 
 - name: Git
