@@ -5,6 +5,9 @@ permalink: /fun/
 weight: 2
 ---
 
+
+# Under Construction
+
 What do I do other than work?
 
 <ul>
