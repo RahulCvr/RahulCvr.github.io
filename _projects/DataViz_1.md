@@ -14,12 +14,9 @@ custom_js:
 
 <br>
 <p> This is a dashboard made using Power Bi based on data from evicton lab. </p>
-<br>
 <p> It provides key insights about the eviction filings over Jan 2022 - Aug 2023. <br>
     The bar chart provides the total filings done in the given month over the years across the locations monitored. The donut chart describes the demographic characteristics of those filed against for eviction. The US map serves as a way to filter based on the State of interest. 
     </p>
-<br>
-
 <div class="left">
 {% include elements/button.html link="https://github.com/RahulCvr/RahulCvr.github.io/blob/main/assets/csv/evictionsdata.csv" text="The Data" %}
 </div>
