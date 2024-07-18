@@ -13,7 +13,6 @@ possibly a human, or maybe a corgi!  Either way there are really neat things I a
   <li>I'm a 22 y/o grad student at Univeristy of Illinois, Urbana-Champaign</li>
   <li> By day, you might find me in class, analysing business case studies and turning numbers into narratives - practicing for those future billable hours, one spreadsheet at a time!</li>
   <li> By evening, I love to go out for a walk or play squash </li>
-  <li> I'm reaching out for the stars with my laptop and my trusted water bottle </li>
   <li> Lately I've been working on some cool projects and research involving machine learning and LLMs, which I plan to share here (and on my Github: <a href="github.com/rahulcvr" >rahulcvr</a> ) </li>
 </ul>
 
