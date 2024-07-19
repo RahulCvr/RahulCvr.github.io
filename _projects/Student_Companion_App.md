@@ -13,6 +13,8 @@ custom_js:
 
 The "Student Companion App" is a cloud-based platform designed to significantly reduce the stress and workload of students by efficiently managing tasks and files. This app provides a central hub for students to manage their educational activities, enhancing organization and accessibility.
 
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FWz3mCcQWMZ2bwIehV50OK6%2FLanding%3Fnode-id%3D17-46%26t%3DAIC9v5In6b0IUkJT-1" allowfullscreen></iframe>
+
 #### Technological Foundation and Functionality
 
 The app harnesses the power of modern web technologies including JavaScript, React-native, and cloud services provided by Firebase. The app's architecture follows the robust Model-View-Controller (MVC) design pattern, ensuring a clean separation of concerns and high maintainability. It utilizes Node.js for building and managing server-side operations, and Expo for publishing updates and managing releases across platforms.
