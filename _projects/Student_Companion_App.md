@@ -21,7 +21,7 @@ The app harnesses the power of modern web technologies including JavaScript, Rea
 
 Developed the UI using figma elements and react-native, which makes it to semlessly work in iOS, Android and in the regular Web.
 
-[Auth]assets\pngs\1.PNG
+<img src = "assets/pngs/1.PNG">
 
 Key functionalities include:
 - **Task Management:** Allows users to add, manage, and track tasks with timely reminders.
