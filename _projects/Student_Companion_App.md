@@ -7,13 +7,17 @@ custom_js:
 ---
 
 
-### Introducing the Student Companion App: An Educational Productivity Tool
+### Student Companion App: An Educational Productivity Tool
 
-#### A Seamless Platform for Enhanced Productivity and Stress Reduction
+<br>
 
 The "Student Companion App" is a cloud-based platform designed to significantly reduce the stress and workload of students by efficiently managing tasks and files. This app provides a central hub for students to manage their educational activities, enhancing organization and accessibility.
 
+<br>
+
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FWz3mCcQWMZ2bwIehV50OK6%2FLanding%3Fnode-id%3D17-46%26t%3DAIC9v5In6b0IUkJT-1" allowfullscreen></iframe>
+
+<br>
 
 #### Technological Foundation and Functionality
 
