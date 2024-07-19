@@ -21,7 +21,7 @@ The app harnesses the power of modern web technologies including JavaScript, Rea
 
 Developed the UI using figma elements and react-native, which makes it to semlessly work in iOS, Android and in the regular Web.
 
-<img src = "https://github.com/RahulCvr/RahulCvr.github.io/blob/main/assets/pngs/1.PNG">
+![Auth](https://raw.githubusercontent.com/RahulCvr/RahulCvr.github.io/main/assets/pngs/1.PNG)
 
 Key functionalities include:
 - **Task Management:** Allows users to add, manage, and track tasks with timely reminders.
