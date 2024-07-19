@@ -21,6 +21,7 @@ The app harnesses the power of modern web technologies including JavaScript, Rea
 
 Developed the UI using figma elements and react-native, which makes it to semlessly work in iOS, Android and in the regular Web.
 
+
 ![Auth](https://raw.githubusercontent.com/RahulCvr/RahulCvr.github.io/main/assets/pngs/1.PNG)
 
 Key functionalities include:
@@ -30,6 +31,21 @@ Key functionalities include:
 - **Collaborative Learning:** Integrates a college-wide public repository or forum where users can access and share educational resources such as class notes and other study materials, fostering a collaborative learning environment.
 
 By integrating these features into a user-friendly interface, the Student Companion App not only aids in academic organization but also boosts productivity and mental well-being.
+
+![Dashboard](https://raw.githubusercontent.com/RahulCvr/RahulCvr.github.io/main/assets/pngs/2.PNG)
+
+<br>
+
+![Scheduler](https://raw.githubusercontent.com/RahulCvr/RahulCvr.github.io/main/assets/pngs/3.PNG)
+
+<br>
+
+![Repo](https://raw.githubusercontent.com/RahulCvr/RahulCvr.github.io/main/assets/pngs/4.PNG)
+
+<br>
+
+![Task Manager](https://raw.githubusercontent.com/RahulCvr/RahulCvr.github.io/main/assets/pngs/6.PNG)
+
 
 #### Conclusion
 
