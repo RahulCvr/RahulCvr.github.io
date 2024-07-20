@@ -25,7 +25,7 @@ Data Preprocessing:
 Movie data: We merged two datasets (movie and credit data) based on movie IDs to integrate movie information, including directors, top three casts, genres, keywords, overview, and tagline.
 User data: We retrieved user IDs, movie IDs, and ratings.
 
-![Auth](https://raw.githubusercontent.com/RahulCvr/RahulCvr.github.io/main/assets/pngs/movierec.PNG)
+![Auth](https://raw.githubusercontent.com/RahulCvr/RahulCvr.github.io/main/assets/pngs/movierec.png)
 
 We started by retrieving movie data from TMDB and processed it through BERT to obtain movie embeddings. The prompt was also passed through BERT, yielding prompt embeddings. We computed movie embeddings for each user's rated movies and calculated the centroid of these vectors to represent user embeddings.
 <br>
@@ -35,13 +35,13 @@ With these two lists, we then compute the dot product between the top 500 movies
 
 #### Results
 
-![Auth](https://raw.githubusercontent.com/RahulCvr/RahulCvr.github.io/main/assets/pngs/movierec3.PNG)
+![Auth](https://raw.githubusercontent.com/RahulCvr/RahulCvr.github.io/main/assets/pngs/movierec3.jpg)
 
 
 #### Future Work
 Instead of just using the dot product to compute the similarity score and finally the recommendations, I would like to use a deep learning model to do that for me.
 
-![Auth](https://raw.githubusercontent.com/RahulCvr/RahulCvr.github.io/main/assets/pngs/movierec2.PNG)
+![Auth](https://raw.githubusercontent.com/RahulCvr/RahulCvr.github.io/main/assets/pngs/movierec2.jpg)
 
 
 First I will append the user embeddings and movie embeddings and then use a manually scored dataset to train a 2-3 layer perceptron network to generate a similarity score for each movie in my list. I believe this will produce more robust and relevant results.
