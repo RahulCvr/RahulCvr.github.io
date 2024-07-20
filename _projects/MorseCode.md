@@ -23,7 +23,7 @@ This project introduces a method for interpreting Morse code through finger gest
 2. **Morse Code Generation**: Depending on the number of fingers detected, different Morse code signals are generated—single finger for a dot, two fingers for a dash, and so forth.
 
 
-![M1](https://raw.githubusercontent.com/RahulCvr/RahulCvr.github.io/main/assets/pngs/M1.PNG)
+![M1](https://raw.githubusercontent.com/RahulCvr/RahulCvr.github.io/main/assets/pngs/M1.png)
 
 ![M2](https://raw.githubusercontent.com/RahulCvr/RahulCvr.github.io/main/assets/pngs/M2.PNG)
 
