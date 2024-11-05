@@ -8,12 +8,14 @@ permalink: /projects/
 
 ## projects---
 
-third-place winner of the 2023 [CogSci Mind Challenge](https://cognitivesciencesociety.org/cogsci-mind-challenge/)
+[Illinois gym app]
 
-<div style="text-align: center;">
-    <iframe width="640" height="360" src="https://www.youtube.com/embed/Gfn6kmbJCZo?si=FTyCOu6uSFwHe4uN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-    </iframe>
+
+{% for project in site.projects %}
+<div style="margin-bottom: 20px;">
+  <img src="{{ project.image }}" alt="{{ project.name }}" style="width:200px; height:auto;">
+  <h3>{{ project.name }}</h3>
+  <p>{{ project.description }}</p>
 </div>
-
-
+{% endfor %}
 

@@ -38,6 +38,10 @@ collections:
         output: true
         permalink: /:collection/:name
 
+    projects:
+        output: true
+        permalink: /projects/:name
+
 # -----------------------------------------------------------------------------
 # Build settings
 # -----------------------------------------------------------------------------
