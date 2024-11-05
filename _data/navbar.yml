@@ -1,7 +1,9 @@
 - name: about
   link: /
-- name: research
-  link: /research/
+#- name: research
+#  link: /research/
+- name: projects
+  link: /projects/
 - name: miscellaneous
   link: /miscellaneous/
 - name: cv
