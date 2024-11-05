@@ -23,4 +23,4 @@ lead a high school science outreach program called [Stanford FAST](https://fast.
 You can email me at rc46 [at] illinois.edu. 
 
 {:.profile .content-mid}
-![profile](/assets/images/profilepic.png)
+![profile](/assets/images/profilepic.jpg)
