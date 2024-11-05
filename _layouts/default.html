@@ -1,34 +1,24 @@
 <!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-<!--
-  portfolYOU Jekyll theme by Youssef Raafat
-  Free for personal and commercial use under the MIT license
-  https://github.com/YoussefRaafatNasry/portfolYOU
-  Updates for JPN Spring 2023
--->
+  {%- include head.html -%}
 
-<html lang="en" class="h-100">
+  <body>
 
-{% include head.html %}
+    {%- include header.html -%}
 
-<body class="h-100 d-flex flex-column">
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
 
-  <main class="flex-shrink-0 container mt-5">
-    {% include navbar.html %}
-    {{ content }}
-  </main>
-  {% include footer.html %}
+        {{ content }}
+  
+      </div>
 
-  {% include analytics.html %}
-  {% include scripts.html %}
+      <div class="push"></div>
+    </main>
 
-  {%- if site.buymeacoffee.enabled == true -%}
-    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="{{ site.buymeacoffee.username }}" data-description="{{ site.buymeacoffee.description }}" data-message="{{ site.buymeacoffee.message }}" data-color="{{ site.buymeacoffee.color }}" data-position="Right" data-x_margin="16" data-y_margin="16"></script>
-  {%- endif -%}
+    {%- include footer.html -%}
+
 </body>
-
-<!--
-end of checks! JPN
--->
 
 </html>

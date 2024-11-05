@@ -1,125 +1,62 @@
-### How to use this document
-# 1. Fill in your info
-# 2. Re-excecute the build in the command line with: bundle exec jekyll serve
-# 3. Push to github
-# NOTE: it looks like you need to rebuild + repush everytime you update this _config.yml file
+# 'bundle exec jekyll serve' to test
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
 
-### Site Settings ###
-title               : C V Rahul Reddy
-description         : >-
-                      Welcome!!! <br> I am definitely not a corgi! <br> Head on over to the <a href="about/">About</a> section to know who I am.
-baseurl             : ""   # Change to empty quotes if you are hosting your site at <your-username>.github.io directly,
-#                                             otherwise will be hosted at <your-username>.github.io/{{base_url}}
-repository          :                 # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects) -- for example, I would put "jnaiman" without the quotes after the ":" here
-open_new_tab        : false                             # Opens external URLs in new tab (works for posts, projects and navbar only)
+# -----------------------------------------------------------------------------
+# Site settings
+# -----------------------------------------------------------------------------
 
+title: Sarah A. Wu
+first_name: Sarah
+middle_name: A.
+last_name: Wu
+email: sarahawu@stanford.edu
+description: >-
+    Sarah A. Wu
+footer_text: >-
+    Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://sarahawu.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
-### Plugins ###
-plugins:
-  - jekyll-archives
-  - jekyll-sitemap
-  - jekyll-paginate-v2
-  - mini_magick
+# -----------------------------------------------------------------------------
+# Socials
+# -----------------------------------------------------------------------------
 
-### To specify which port to host locally on -- use if you have multiple sites you want to host 
-port: 4008
+socials:
+    twitter:
+    github: sarahawu
+    # instagram: swubear
+    last-fm: sarahwu_
+    # goodreads: sarahawu
 
-### Navbar Settings ###
-nav_exclude:                                            # The following paths are excluded from navbar
-  - pages/tags.html
-  - pages/404.html
-  - pages/index.md
-  - documentation/partials/**                           # For Documentation Only
+# -----------------------------------------------------------------------------
+# Collections
+# -----------------------------------------------------------------------------
 
-
-### Author Info ###
-author:
-  name              : C V Rahul
-  image             : https://source.unsplash.com/300x300/?corgi&derpy
-#  behance           : your_username
-# dribbble          : your_username
-  email             : username@domain.com
-#  facebook          : your_username
-  github            : RahulCvr # JPN
-# gitlab            : your_username
-# instagram         : your_username
-# kaggle            : your_username
-#  linkedin          : your_username
-#  medium            : your_username
-# soundcloud        : your_username
-# spotify           : your_username
-# stackoverflow     : your_user_id
-# tumblr            : your_username.tumblr.com
-#  twitch            : your_username
-  twitter           : your_username
-#  vimeo             : your_username
-  youtube           : your_channel_name
-# keybase           : your_username
-
-
-### Posts ###
-permalink: /blog/:title
-
-
-### Collections ###
 collections:
-  projects:
-    output: true
-    permalink: /projects/:name
-  elements:                                             # For Documentation Only
-    output: true                                        # For Documentation Only
+    publications:
+        output: true
+        permalink: /:collection/:name
 
+# -----------------------------------------------------------------------------
+# Build settings
+# -----------------------------------------------------------------------------
 
-### Disqus ###
-disqus:
-  shortname: your-short-name-disqus                     # Your website Shortname on disqus
+markdown: kramdown
+# theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 
-
-### Analytics ###
-analytics:
-  enabled: false                                        # Set true to enable analytics
-  google:
-    tracking_id: your-google-tracking-id
-
-
-### Buy me a coffee ###
-# See https://www.buymeacoffee.com/
-buymeacoffee:
-  enabled: false
-  username: your_username
-  color: "#007bff"
-  message: "Thank you for visiting."                    # Message to be displayed aside from the button for a few seconds.
-  description: "Support me on Buy me a coffee!"
-
-
-### Defaults for collections ###
-defaults:
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "page"
-  - scope:                                              # For Documentation Only
-      path: ""                                          # For Documentation Only
-      type: "elements"                                  # For Documentation Only
-    values:                                             # For Documentation Only
-      layout: "element"                                 # For Documentation Only
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      comments: false                                   # Set to true to enable disqus comments
-
-
-### Exclude from processing ###
-## Add yours here if you have other stuff in your github.io page!!!**
-exclude:
-  - README.md
-  - README.md~
-  - CONTRIBUTING.md
-  - LICENSE.md
-  - LICENSE.md~
-  - config.yml~
-  - "*.log"
-  - "*.ipynb"
-  - "python_notebooks/*"
+# Exclude from processing.
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
