@@ -2,6 +2,7 @@
 layout: default
 title: Research
 permalink: /research/
+published: false
 ---
 
 {% assign sorted = site.publications | sort: "date" | reverse %}
