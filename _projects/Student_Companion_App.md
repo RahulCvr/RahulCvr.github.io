@@ -52,7 +52,6 @@ By integrating these features into a user-friendly interface, the Student Compan
 
 ![Task Manager](https://raw.githubusercontent.com/RahulCvr/RahulCvr.github.io/main/assets/pngs/6.PNG)
 
-
 #### Conclusion
 
 The Student Companion App represents a significant advancement in educational technology, providing a comprehensive solution for students and educators alike to navigate the complexities of academic life with ease and efficiency.
