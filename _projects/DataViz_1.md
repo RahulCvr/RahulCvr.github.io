@@ -25,10 +25,5 @@ custom_js:
 <p> This is a dashboard made using Tableau based on data from evicton lab. </p>
 <p> It provides key insights about the eviction filings over Jan 2022 - Aug 2023. <br>
     The bar chart provides the total filings done in the given month over the years across the locations monitored. The line chart on the right describes the monthly trends of filings by state. The US map serves as a way to summarize the total filings by various states. 
-    </p>
+</p>
 
-<!--
-<div class="left">
- {% include elements/button.html link="https://github.com/RahulCvr/RahulCvr.github.io/blob/main/assets/csv/evictionsdata.csv" text="The Data" %} 
-</div>
--->
