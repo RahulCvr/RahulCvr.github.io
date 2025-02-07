@@ -1,9 +1,11 @@
 ---
 name: A few Data Vizualizations
 tools: [ETL, Tableau, Power Bi]
-image: assets/pngs/dataviz1.PNG
-description:
-custom_js: 
+description: This project explores eviction filings trends with Tableau dashboards.
+custom_js:
+category: data 
+link: /projects/data/DataViz_1
+layout: default
 ---
 
 

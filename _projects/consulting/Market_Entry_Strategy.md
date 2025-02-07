@@ -3,6 +3,7 @@ name: Markey Entry Strategy
 tools: [Strategy Consulting, Product Manager]
 image: assets/pngs/Consulting.png
 description: A certain Multimillion dollar Asian Healthcare Company approached us and needed us to assess and find a market they could enter in the United States.
+category: consulting 
 custom_js: 
 ---
 
