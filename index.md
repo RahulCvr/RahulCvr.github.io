@@ -11,7 +11,7 @@ My current research focuses on enhancing summarization tasks in large language m
 I work with data and machine learning to help businesses make smarter choices and find better ways to serve their customers.
 
 {:.content-narrow .content-block}
-Last summer, I've worked at [Cline Center](https://www.clinecenter.illinois.edu/){:target="_blank"} as a data scientist intern.
+Since summer 2024 (till may 2025), I've been working at [Cline Center](https://www.clinecenter.illinois.edu/){:target="_blank"} as a data scientist intern.
 Before graduate school, I did my bachelors in computer science. 
 
 {:.content-narrow .content-block}
