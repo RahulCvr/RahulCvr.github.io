@@ -1,0 +1,55 @@
+/* Example CSS for your projects page */
+.project-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #33333300;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+  
+  /* .project-item:hover {
+    background-color: #fa919100;
+  } */
+  
+  .project-icon img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+  }
+  
+  .project-details h3 {
+    margin: 0;
+    color: #000000;
+  }
+  
+  /* Hide descriptions by default */
+  .project-description {
+    display: none;
+    margin-left: 50px; /* Indent or style as you wish */
+    background-color: #22222200;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .project-description p {
+    color: #505050;
+  }
+  
+  .project-description ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .project-description .tag {
+    display: inline-block;       /* Ensure each tag behaves like a small 'pill' box */
+    padding: 5px 10px;           /* Add space around the text */
+    margin: 2px;                 /* Small gap between tags */
+    border-radius: 8px;          /* Rounded corners */
+    background-color: #333;      /* Background color for the tag box */
+    color: #fff;                 /* Text color */
+    font-size: 0.9rem;           /* Optional: adjust font size */
+    text-decoration: none;       /* Optional: remove any link underlines if they're links */
+  }

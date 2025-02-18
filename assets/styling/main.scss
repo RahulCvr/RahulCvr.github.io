@@ -5,7 +5,7 @@
  * defaults
  */
 $base-font-family:  "Lato", sans-serif !default;
-$base-font-size:    13px !default;
+$base-font-size:    14px !default;
 $base-font-weight:  400 !default;
 $large-font-size:   24px !default;
 $emph-font-weight:  600 !default;
@@ -35,14 +35,18 @@ $on-laptop:         800px !default;
 //     padding-left: $unit-spacing / 2;
 //   }
 // }
+
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
     @content;
   }
 }
 
+
 @mixin relative-font-size($ratio) {
-  font-size: $base-font-size * $ratio;
+  // font-size: $base-font-size * $ratio;
+  font-size: calc(#{$base-font-size} * #{$ratio});
+  font-size: calc(0.9rem + 0.5vw);
 }
 
 

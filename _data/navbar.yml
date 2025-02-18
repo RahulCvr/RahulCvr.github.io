@@ -4,7 +4,7 @@
 #  link: /research/
 - name: projects
   link: /projects/
-- name: miscellaneous
-  link: /miscellaneous/
+#- name: miscellaneous
+#  link: /miscellaneous/
 - name: cv
   link: /assets/cv.pdf

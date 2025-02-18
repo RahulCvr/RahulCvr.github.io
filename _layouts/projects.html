@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include projects_head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+
+        {{ content }}
+  
+      </div>
+
+      <div class="push"></div>
+    </main>
+
+    {%- include footer.html -%}
+
+</body>
+<script>
+    function toggleDescription(id) {
+        var desc = document.getElementById(id);
+        if (desc.style.display === "none" || desc.style.display === "") {
+            desc.style.display = "block";
+        } else {
+            desc.style.display = "none";
+        }
+    }
+</script>
+
+</html>
