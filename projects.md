@@ -43,8 +43,22 @@ permalink: /projects/
 
 ## projects
 
+<div>
+  <h4> Filter by category: </h4>
+
+  <select id="category-filter" onchange="filterProjects()">
+    <option value="all">All</option>
+    <option value="data science">Data Science</option>
+    <option value="data engineer">Data Engineer</option>
+    <option value="mlops">MLOPs</option>
+    <option value="analyst">BI/Analyst</option>
+    <option value="consulting">Consulting</option>
+    <option value="others">Others</option>
+  </select>
+</div>
+
 {% for project in site.projects %}
-<div class="project-item" onclick="toggleDescription('desc-{{ forloop.index }}')">
+<div class="project-item" data-category="{{ project.category | join: ',' }}" onclick="toggleDescription('desc-{{ forloop.index }}')">
   <!-- <div class="project-icon">
     <img src="{{ project.icon }}" alt="{{ project.name }}">
   </div> -->

@@ -29,6 +29,25 @@
             desc.style.display = "none";
         }
     }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      filterProjects(); // Run filter on page load
+    });
+
+    function filterProjects() {
+      var selectedCategory = document.getElementById("category-filter").value;
+      var projects = document.querySelectorAll(".project-item");
+
+      projects.forEach(function(project) {
+        var categories = project.getAttribute("data-category").split(","); // Convert string to array
+
+        if (selectedCategory === "all" || categories.includes(selectedCategory)) {
+          project.style.display = "block"; // Show projects that match
+        } else {
+          project.style.display = "none"; // Hide non-matching projects
+        }
+      });
+    }
 </script>
 
 </html>

@@ -3,7 +3,8 @@ name: Student Companion App
 tools: [Software Development, React-native, FireBase]
 image: assets/pngs/studentapp.PNG
 description: "Insert from proposal"
-category: data 
+category: ['others'] 
+short_description: add short description
 custom_js: 
 ---
 
