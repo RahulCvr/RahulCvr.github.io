@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cline Center - Portfolio</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container page-container">
+        <div class="breadcrumb">
+            <a href="../../index.html">rcv</a> / <a href="../../work.html">work</a> / <span class="active">cline center</span>
+        </div>
+        
+        <div class="work-header">
+            <div class="work-icon square-icon blue-icon"></div>
+            <div>
+                <h1 class="page-title">Data Scientist Intern</h1>
+                <p class="work-company">Cline Center for Advanced Social Research</p>
+                <p class="work-date">May 2024 - May 2025</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="impact-highlight">
+                <li>Built ETL pipelines to create datasets for downstream machine learning tasks. </li>
+                <li>Improved existing classification models and set up retraining & evaluation pipelines.</li>
+                <li>Created multiple Power BI dashboards to present projects results used by users across the world.</li>
+                <li>Built agentic AI pipeline to automate data collection.</li>
+            </div>
+
+            <h2>Problem Statements (across multiple projects)</h2>
+            <ul class="feature-list">
+                <li>Text data was needed to be classified with low false positive rate for downstream business tasks.</li>
+                <li>New scalable ETL pipelines were to be built to support multiple machine learning tasks.</li>
+                <li>Data warehouse had duplicate text data and needed to be cleaned.</li>
+            </ul>
+
+            <h2>What I Did</h2>
+            <div class="approach-section">
+                <ul class="feature-list">
+                    <li>Debugged and refactored source code</li>
+                    <li>Wrote unit tests for existing modules</li>
+                    <li>Updated project documentation--code comments, readme files, project wikis, and runbooks to accelerate onboarding and collaboration.</li>
+                    <li>Deployed Azure resources (Databricks, Data Factory, Linux Virtual Machines) and configured high-compute development environments (Docker containers, Jupyter Notebooks, GitLab CI/CD)</li>
+                    <li>Built an agentic AI pipeline using oLlama LLM agents to automate data extraction and cleaning from web pages and documents</li>
+                    <li>Built scalable ETL pipelines in Azure to support multiple machine learning tasks</li>
+                    <li>Engineered a HDBSCAN-based clustering solution to flag duplicate data in the data warehouse, cutting down duplicate data by 88%</li>
+                    <li>Designed and implemented a two-stage cascading binary classifier, to classify text documents with low false positive rate</li>
+                    <li>Created interactive Power BI dashboards with scheduled refreshes used by end-users worldwide</li>
+                </ul>
+                
+                
+                <h2>Technical Implementation</h3>
+                <h3>Two-Stage Cascading Binary Classifier</h2>
+                <div class="architecture-diagram">
+                   <pre>                           
+                    +-------------------+
+                    |   Raw Text Input  |
+                    +-------------------+
+                               |
+                               v
+                    +-------------------------------------+
+                    |  Stage 1: High-Recall Classifier(s) |
+                    +-------------------------------------+
+                               |
+                               |  P(positive) > threshold₁?
+                               |  (e.g. 0.20 to ensure high recall)
+                               v
+                        +-------------+      +------------------+
+                        | Discard/    |      |  Pass to Stage 2 |
+                        |  Flag       |      |  (Positives)     |
+                        | (Negatives) |      |  (Candidates)    |
+                        +-------------+      +------------------+
+                                                   |
+                                                   v
+                    +----------------------------------------------+
+                    | Stage 2: High-Precision Refiner              |
+                    | - BERT-based classifier                      |
+                    | (trained on Stage 1 positives + sampled negs)|
+                    | (optimized for precision)                    |
+                    +----------------------------------------------+
+                            |
+                            v
+                    +-------------------+
+                    |  Final Positives  |
+                    +-------------------+
+                    </pre>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+    <script src="../../script.js"></script>
+</body>
+</html>

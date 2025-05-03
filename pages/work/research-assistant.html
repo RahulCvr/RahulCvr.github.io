@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Assistant - Portfolio</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container page-container">
+        <div class="breadcrumb">
+            <span class="back-arrow">◄</span> <a href="../../index.html">rcv</a> / <a href="../../work.html">work</a> / <span class="active">research assistant</span>
+        </div>
+        
+        <div class="work-header">
+            <div class="work-icon square-icon gray-icon"></div>
+            <div>
+                <h1 class="page-title">Research Assistant</h1>
+                <p class="work-company">Department of Accountancy, UIUC</p>
+                <p class="work-date">Mar 2024 - May 2024</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="impact-highlight">
+                <p>Aided advisors and students decision making with a data-driven, 
+                    alumni-informed course pathway recommendation tool.    </p>
+            </div>
+
+            <h2>Problem Statement</h2>
+            <ul class="feature-list">
+                <li>Students arrive with diverse career aspirations—whether entering industry, launching startups, 
+                    or pursuing graduate studies—and need tailored academic and extracurricular guidance.</li>
+                <li>The volume of course offerings and student-run clubs creates decision fatigue, 
+                    making it hard for students to narrow down the options that best support their individual goals.</li>
+                <li>Many valuable electives and niche organizations go unnoticed, so students inadvertently miss 
+                    out on opportunities that could accelerate their development.</li>
+                <li>As a result, “What courses should I take this semester or organizations should I join to reach my goal?” is the most common request advisors 
+                    receive.</li>
+            </ul>
+
+            <h2>What I Did</h2>
+            <div class="approach-section">
+                <ul class="feature-list">
+                    <li>Communicated with advisors and students to understand their needs.</li>
+                    <li>Gathered data, preprocessed and anonymized it for analysis.</li>
+                    <li>Built a recommendation tool that uses clustering to find similar alumni personas
+                        and recommend courses and organizations to students.
+                    </li>
+                    <li>Deployed the tool using streamlit on a on-prem server.</li>
+                    <li>Built Power BI dashboards to track cohort journey (graduation rate, first-job outcomes, salary, etc.)</li>
+                </ul>
+                
+                
+                <h3>Technical Implementation</h3>
+                <div class="architecture-diagram">
+                   <pre>                           
+                      +----------------------+
+                      |   Data Integration   |
+                      +----------------------+
+                                 |
+                                 v
+                    +---------------------------+
+                    |   Analysis & Insights     |
+                    | - Data cleaning &         |
+                    |   preprocessing           |
+                    | - Anonymization           |
+                    | - Alumni Cohort analysis  |
+                    | - KNN & clustering model  |
+                    +---------------------------+
+                                 |
+                                 v
+                      +----------------------+
+                      |      Delivery        |
+                      | - Streamlit frontend |
+                      +----------------------+ 
+                    </pre>
+                </div>
+                
+            </div>
+
+            <!--
+            <h2>Impact & Metrics</h2>
+            <div class="metrics-section">
+                <div class="metric-card">
+                    <h3>Efficiency Gains</h3>
+                    <p>15 hours/week saved in data processing</p>
+                </div>
+            </div>
+            -->
+
+            <h2>Technologies Used</h2>
+            <div class="tag-list">
+                <span class="tag normal-tag">Python</span>
+                <span class="tag normal-tag">SQL</span>
+                <span class="tag normal-tag">Machine Learning</span>
+                <span class="tag normal-tag">ETL</span>
+                <span class="tag normal-tag">Streamlit</span>
+                <span class="tag normal-tag">Power BI</span>
+            </div>
+        </div>
+    </div>
+    <script src="../../script.js"></script>
+</body>
+</html>
