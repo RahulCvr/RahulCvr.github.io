@@ -1,5 +1,8 @@
 // JavaScript for the portfolio site
 
+// Toggle variable for project filters
+const ENABLE_PROJECT_FILTERS = 0;
+
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Portfolio site loaded');
 
@@ -104,8 +107,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // Initialize role filters if on projects page
-    if (document.querySelector('.project-list')) {
+    // Initialize role filters if on projects page and filters are enabled
+    if (document.querySelector('.project-list') && ENABLE_PROJECT_FILTERS === 1) {
         addRoleFilters();
     }
 });
