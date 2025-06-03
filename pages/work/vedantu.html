@@ -1,71 +1,180 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cline Center - Portfolio</title>
-    <link rel="stylesheet" href="../../styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
+    <title>Machine Learning Research Intern - Vedantu | Rahul Cv</title>
+    <meta name="description" content="Machine Learning Research Intern experience at Vedantu">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.ico">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../assets/css/main.css">
+
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T5GK124G5X"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T5GK124G5X"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-T5GK124G5X');
-</script>
-<body>
-    <div class="container page-container">
-        <div class="breadcrumb">
-            <a href="../../index.html">rcv</a> / <a href="../../work.html">work</a> / <span class="active">vedantu</span>
-        </div>
-        
-        <div class="work-header">
-            <div class="work-icon square-icon crimson-icon"></div>
-            <div>
-                <h1 class="page-title">Machine Learning Research Intern</h1>
-                <p class="work-company">Vedantu</p>
-                <p class="work-date">Jul 2022 - Dec 2022</p>
-            </div>
-        </div>
-
-        <div class="content-section">
-            <div class="impact-highlight">
-                <li>Optimized SQL queries to improve data retrieval processes.</li>
-                <li>Built python modules for data migration from SQL to AWS Redshift with validation checks.</li>
-                <li>Created ETL processes to build features for video recommender systems.</li>
-                <li>Ran A/B tests to evaluate the impact of different features on user engagement.</li>
-            </div>
-
-            <h2>Problem Statements</h2>
-            <ul class="feature-list">
-                <li>Surface the strongest retention drivers for Vedantu's video content.</li>
-                <li>Validate the impact of different features on user engagement.</li>
-                <li>Reduce report latency and manual effort for metric tracking.</li>
-                <li>Aid in building data migration pipelines.</li>
-            </ul>
-
-            <h2>What I Did</h2>
-            <div class="approach-section">
-                <ul class="feature-list">
-                    <li>Analyzed existing SQL queries and optimized them for better performance.</li>
-                    <li>Built python modules for data migration from MySQL database to AWS Redshift, while enforcing data quality checks, and logging the migration process.</li>
-                    <li>Collaborated with Product, Data Science, and Software Engineering teams to understand product requirements.</li>
-                    <li>Ran regression analysis and hypothesis tesing to find the strongest retention & engagement drivers for Vedantu's homepage video content.</li>
-                    <li>Ran A/B tests to evaluate the impact of different features on user engagement.</li>
-                    <li>Built ETL pipelines to extract logs/engagement data from AWS Redshift, and transformation logic using pyspark to build features for video recommender systems.</li>
-                    <li>Designed interactive Tableau dashboards for weekly reviews of retention, engagement and NPS (Net Promoter Score) metrics for 5+ million users used by PMs and data scientists.</li>
-                </ul>
-                
+    gtag('config', 'G-T5GK124G5X');
+    </script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white dark:bg-zinc-950">
+    <div class="min-h-screen w-full flex flex-col font-sans">
+        <div class="relative mx-auto w-full max-w-6xl flex-1 px-4 pt-20">
+            <!-- Header -->
+            <header class="mb-8 flex items-center justify-between">
+                <div>
+                    <a href="../../index.html" class="text-2xl font-medium text-black dark:text-white">
+                        Rahul Reddy Chappidi Venkata
+                    </a>
+                    <p class="text-lg text-zinc-600 dark:text-zinc-500">
+                        Data Scientist
+                    </p>
                 </div>
                 
-            </div>
+                <nav class="flex items-center space-x-6">
+                    <a href="../../index.html#overview" class="text-sm font-medium text-zinc-600 hover:text-black dark:text-zinc-400 dark:hover:text-white transition-colors">
+                        Overview
+                    </a>
+                    <a href="../../index.html#experience" class="text-sm font-medium text-zinc-600 hover:text-black dark:text-zinc-400 dark:hover:text-white transition-colors">
+                        Experience
+                    </a>
+                    <a href="../../index.html#skills" class="text-sm font-medium text-zinc-600 hover:text-black dark:text-zinc-400 dark:hover:text-white transition-colors">
+                        Skills
+                    </a>
+                    <a href="../../index.html#projects" class="text-sm font-medium text-zinc-600 hover:text-black dark:text-zinc-400 dark:hover:text-white transition-colors">
+                        Projects
+                    </a>
+                    <a href="../../index.html#education" class="text-sm font-medium text-zinc-600 hover:text-black dark:text-zinc-400 dark:hover:text-white transition-colors">
+                        Education
+                    </a>
+                    <a href="../../assets/resume/resume.pdf" target="_blank" class="text-sm font-medium text-zinc-600 hover:text-black dark:text-zinc-400 dark:hover:text-white transition-colors">
+                        Resume
+                    </a>
+                    
+                    <button id="theme-toggle" class="theme-toggle">
+                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path class="sun-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                            <path class="moon-icon hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                    </button>
+                </nav>
+            </header>
+
+            <!-- Main Content -->
+            <main class="space-y-24">
+                <div class="project-card">
+                    <div class="project-content" style="padding: 24px;">
+                        <div class="mb-8">
+                            <h1 class="text-2xl font-medium text-black dark:text-white mb-2">Machine Learning Research Intern</h1>
+                            <p class="text-lg text-zinc-600 dark:text-zinc-400 mb-1">Vedantu</p>
+                            <p class="text-zinc-500 dark:text-zinc-500">Jul 2022 - Dec 2022</p>
+                        </div>
+
+                        <div class="space-y-8">
+                            <div>
+                                <h2 class="text-lg font-medium mb-4 text-black dark:text-white">Key Achievements</h2>
+                                <ul class="list-disc space-y-2 text-zinc-600 dark:text-zinc-400">
+                                    <li>Optimized SQL queries and built data migration modules for improved performance</li>
+                                    <li>Created ETL pipelines for video recommender systems serving 5M+ users</li>
+                                    <li>Ran A/B tests and regression analysis to measure feature impact</li>
+                                    <li>Designed Tableau dashboards for business intelligence and user analytics</li>
+                                </ul>
+                            </div>
+
+                            <br>
+                            <br>
+
+                            <div>
+                                <h2 class="text-lg font-medium mb-4 text-black dark:text-white">Problem Statement</h2>
+                                <ul class="list-disc space-y-2 text-zinc-600 dark:text-zinc-400">
+                                    <li>Platform needed personalized video recommendations to improve student engagement</li>
+                                    <li>Existing data pipelines were inefficient and required optimization</li>
+                                    <li>Business teams needed real-time analytics for data-driven decision making</li>
+                                    <li>User engagement metrics needed systematic tracking and analysis</li>
+                                </ul>
+                            </div>
+
+                            <br>
+                            <br>
+
+                            <div>
+                                <h2 class="text-lg font-medium mb-4 text-black dark:text-white">Technical Implementation</h2>
+                                <ul class="list-disc space-y-2 text-zinc-600 dark:text-zinc-400">
+                                    <li>Optimized complex SQL queries reducing execution time by 40%</li>
+                                    <li>Built robust data migration modules for seamless data transfers</li>
+                                    <li>Developed scalable ETL pipelines for processing video interaction data</li>
+                                    <li>Implemented machine learning models for personalized content recommendation</li>
+                                    <li>Designed and executed A/B testing frameworks for feature validation</li>
+                                    <li>Created comprehensive Tableau dashboards for business stakeholders</li>
+                                    <li>Set up automated monitoring and alerting systems for data quality</li>
+                                </ul>
+                            </div>
+
+                            <br>
+                            <br>
+
+                            <div>
+                                <h2 class="text-lg font-medium mb-4 text-black dark:text-white">Impact & Results</h2>
+                                <ul class="list-disc space-y-2 text-zinc-600 dark:text-zinc-400">
+                                    <li>Improved video recommendation accuracy leading to increased student engagement</li>
+                                    <li>Reduced data processing time through optimized pipelines and queries</li>
+                                    <li>Enabled data-driven product decisions through comprehensive analytics</li>
+                                    <li>Supported 5M+ users with reliable and scalable data infrastructure</li>
+                                    <li>Provided actionable insights to product and business teams</li>
+                                </ul>
+                            </div>
+
+                            <br>
+                            <br>
+
+                            <div>
+                                <h2 class="text-lg font-medium mb-4 text-black dark:text-white">Technologies Used</h2>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">SQL</span>
+                                    <span class="skill-tag">Machine Learning</span>
+                                    <span class="skill-tag">ETL Pipelines</span>
+                                    <span class="skill-tag">Tableau</span>
+                                    <span class="skill-tag">A/B Testing</span>
+                                    <span class="skill-tag">Regression Analysis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <footer class="mt-24 border-t border-zinc-100 px-0 py-4 dark:border-zinc-800">
+                <div class="flex items-center justify-center">
+                    <div class="text-xs text-zinc-500">
+                        <span>© 2024 Rahul Reddy Chappidi Venkata.</span>
+                        <span class="ml-2">Built with HTML, CSS, JS and YAML.</span>
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
-    <script src="../../script.js"></script>
+
+    <!-- Scripts -->
+    <script>
+        // Fix the data path issue for detail pages
+        window.isDetailPage = true;
+        window.rootPath = '../../';
+    </script>
+    <script src="../../assets/js/data.js"></script>
+    <script src="../../assets/js/theme.js"></script>
+    <script src="../../assets/js/animations.js"></script>
+    <script src="../../assets/js/main.js"></script>
 </body>
-</html>
+</html> 

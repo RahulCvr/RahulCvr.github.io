@@ -1,109 +1,206 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cline Center - Portfolio</title>
-    <link rel="stylesheet" href="../../styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
+    <title>Data Scientist Intern - Cline Center | Rahul Cv</title>
+    <meta name="description" content="Data Scientist Intern experience at Cline Center for Advanced Social Research">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.ico">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../assets/css/main.css">
+
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T5GK124G5X"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T5GK124G5X"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-T5GK124G5X');
-</script>
-<body>
-    <div class="container page-container">
-        <div class="breadcrumb">
-            <a href="../../index.html">rcv</a> / <a href="../../work.html">work</a> / <span class="active">cline center</span>
-        </div>
-        
-        <div class="work-header">
-            <div class="work-icon square-icon blue-icon"></div>
-            <div>
-                <h1 class="page-title">Data Scientist Intern</h1>
-                <p class="work-company">Cline Center for Advanced Social Research</p>
-                <p class="work-date">May 2024 - May 2025</p>
-            </div>
-        </div>
-
-        <div class="content-section">
-            <div class="impact-highlight">
-                <li>Built ETL pipelines to create datasets for downstream machine learning tasks. </li>
-                <li>Improved existing classification models and set up retraining & evaluation pipelines.</li>
-                <li>Created multiple Power BI dashboards to present projects results used by users across the world.</li>
-                <li>Built agentic AI pipeline to automate data collection.</li>
-            </div>
-
-            <h2>Problem Statements (across multiple projects)</h2>
-            <ul class="feature-list">
-                <li>Text data was needed to be classified with low false positive rate for downstream business tasks.</li>
-                <li>New scalable ETL pipelines were to be built to support multiple machine learning tasks.</li>
-                <li>Data warehouse had duplicate text data and needed to be cleaned.</li>
-            </ul>
-
-            <h2>What I Did</h2>
-            <div class="approach-section">
-                <ul class="feature-list">
-                    <li>Debugged and refactored source code</li>
-                    <li>Wrote unit tests for existing modules</li>
-                    <li>Updated project documentation--code comments, readme files, project wikis, and runbooks to accelerate onboarding and collaboration.</li>
-                    <li>Deployed Azure resources (Databricks, Data Factory, Linux Virtual Machines) and configured high-compute development environments (Docker containers, Jupyter Notebooks, GitLab CI/CD)</li>
-                    <li>Built an agentic AI pipeline using oLlama LLM agents to automate data extraction and cleaning from web pages and documents</li>
-                    <li>Built scalable ETL pipelines in Azure to support multiple machine learning tasks</li>
-                    <li>Engineered a HDBSCAN-based clustering solution to flag duplicate data in the data warehouse, cutting down duplicate data by 88%</li>
-                    <li>Designed and implemented a two-stage cascading binary classifier, to classify text documents with low false positive rate</li>
-                    <li>Created interactive Power BI dashboards with scheduled refreshes used by end-users worldwide</li>
-                </ul>
-                
-                
-                <h2>Technical Implementation</h3>
-                <h3>Two-Stage Cascading Binary Classifier</h2>
-                <div class="architecture-diagram">
-                   <pre>                           
-                    +-------------------+
-                    |   Raw Text Input  |
-                    +-------------------+
-                               |
-                               v
-                    +-------------------------------------+
-                    |  Stage 1: High-Recall Classifier(s) |
-                    +-------------------------------------+
-                               |
-                               |  P(positive) > threshold₁?
-                               |  (e.g. 0.20 to ensure high recall)
-                               v
-                        +-------------+      +------------------+
-                        | Discard/    |      |  Pass to Stage 2 |
-                        |  Flag       |      |  (Positives)     |
-                        | (Negatives) |      |  (Candidates)    |
-                        +-------------+      +------------------+
-                                                   |
-                                                   v
-                    +----------------------------------------------+
-                    | Stage 2: High-Precision Refiner              |
-                    | - BERT-based classifier                      |
-                    | (trained on Stage 1 positives + sampled negs)|
-                    | (optimized for precision)                    |
-                    +----------------------------------------------+
-                            |
-                            v
-                    +-------------------+
-                    |  Final Positives  |
-                    +-------------------+
-                    </pre>
+    gtag('config', 'G-T5GK124G5X');
+    </script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white dark:bg-zinc-950">
+    <div class="min-h-screen w-full flex flex-col font-sans">
+        <div class="relative mx-auto w-full max-w-6xl flex-1 px-4 pt-20">
+            <!-- Header -->
+            <header class="mb-8 flex items-center justify-between">
+                <div>
+                    <a href="../../index.html" class="text-2xl font-medium text-black dark:text-white">
+                        Rahul Reddy Chappidi Venkata
+                    </a>
+                    <p class="text-lg text-zinc-600 dark:text-zinc-500">
+                        Data Scientist
+                    </p>
                 </div>
                 
-            </div>
-        </div>
+                <nav class="flex items-center space-x-6">
+                    <a href="../../index.html#overview" class="text-sm font-medium text-zinc-600 hover:text-black dark:text-zinc-400 dark:hover:text-white transition-colors">
+                        Overview
+                    </a>
+                    <a href="../../index.html#experience" class="text-sm font-medium text-zinc-600 hover:text-black dark:text-zinc-400 dark:hover:text-white transition-colors">
+                        Experience
+                    </a>
+                    <a href="../../index.html#skills" class="text-sm font-medium text-zinc-600 hover:text-black dark:text-zinc-400 dark:hover:text-white transition-colors">
+                        Skills
+                    </a>
+                    <a href="../../index.html#projects" class="text-sm font-medium text-zinc-600 hover:text-black dark:text-zinc-400 dark:hover:text-white transition-colors">
+                        Projects
+                    </a>
+                    <a href="../../index.html#education" class="text-sm font-medium text-zinc-600 hover:text-black dark:text-zinc-400 dark:hover:text-white transition-colors">
+                        Education
+                    </a>
+                    <a href="../../assets/resume/resume.pdf" target="_blank" class="text-sm font-medium text-zinc-600 hover:text-black dark:text-zinc-400 dark:hover:text-white transition-colors">
+                        Resume
+                    </a>
+                    
+                    <button id="theme-toggle" class="theme-toggle">
+                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path class="sun-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                            <path class="moon-icon hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                    </button>
+                </nav>
+            </header>
 
+            <!-- Main Content -->
+            <main class="space-y-24">
+                <div class="project-card">
+                    <div class="project-content" style="padding: 24px;">
+                        <div class="mb-8">
+                            <h1 class="text-2xl font-medium text-black dark:text-white mb-2">Data Scientist Intern</h1>
+                            <p class="text-lg text-zinc-600 dark:text-zinc-400 mb-1">Cline Center for Advanced Social Research</p>
+                            <p class="text-zinc-500 dark:text-zinc-500">May 2024 - May 2025</p>
+                        </div>
+
+                        <div class="space-y-8">
+                            <div>
+                                <h2 class="text-lg font-medium mb-4 text-black dark:text-white">Key Achievements</h2>
+                                <ul class="list-disc space-y-2 text-zinc-600 dark:text-zinc-400">
+                                    <li>Built ETL pipelines to create datasets for downstream machine learning tasks</li>
+                                    <li>Improved existing classification models and set up retraining & evaluation pipelines</li>
+                                    <li>Created multiple Power BI dashboards to present project results used by users across the world</li>
+                                    <li>Built agentic AI pipeline to automate data collection</li>
+                                </ul>
+                            </div>
+
+                            <br>
+                            <br>
+
+                            <div>
+                                <h2 class="text-lg font-medium mb-4 text-black dark:text-white">Problem Statements</h2>
+                                <ul class="list-disc space-y-2 text-zinc-600 dark:text-zinc-400">
+                                    <li>Text data needed to be classified with low false positive rate for downstream business tasks</li>
+                                    <li>New scalable ETL pipelines were to be built to support multiple machine learning tasks</li>
+                                    <li>Data warehouse had duplicate text data and needed to be cleaned</li>
+                                </ul>
+                            </div>
+
+                            <br>
+                            <br>
+
+                            <div>
+                                <h2 class="text-lg font-medium mb-4 text-black dark:text-white">Technical Implementation</h2>
+                                <ul class="list-disc space-y-2 text-zinc-600 dark:text-zinc-400">
+                                    <li>Debugged and refactored source code, wrote unit tests for existing modules</li>
+                                    <li>Updated project documentation—code comments, readme files, project wikis, and runbooks</li>
+                                    <li>Deployed Azure resources (Databricks, Data Factory, Linux Virtual Machines)</li>
+                                    <li>Built an agentic AI pipeline using oLlama LLM agents to automate data extraction</li>
+                                    <li>Engineered a HDBSCAN-based clustering solution to flag duplicate data, cutting down duplicate data by 88%</li>
+                                    <li>Designed and implemented a two-stage cascading binary classifier for low false positive rate</li>
+                                    <li>Created interactive Power BI dashboards with scheduled refreshes used by end-users worldwide</li>
+                                </ul>
+
+                                <br>
+
+                                <div class="mt-8">
+                                    <h3 class="text-base font-medium mb-4 text-black dark:text-white">Two-Stage Cascading Binary Classifier Architecture</h3>
+                                    <div class="architecture-diagram">
+                                        <pre>
+                     +-------------------+
+                     |   Raw Text Input  |
+                     +-------------------+
+                                |
+                                v
+                     +-------------------------------------+
+                     |  Stage 1: High-Recall Classifier(s) |
+                     +-------------------------------------+
+                                |
+                                |  P(positive) > threshold₁?
+                                |  (e.g. 0.20 to ensure high recall)
+                                v
+                         +-------------+      +------------------+
+                         | Discard/    |      |  Pass to Stage 2 |
+                         |  Flag       |      |  (Positives)     |
+                         | (Negatives) |      |  (Candidates)    |
+                         +-------------+      +------------------+
+                                                    |
+                                                    v
+                     +----------------------------------------------+
+                     | Stage 2: High-Precision Refiner              |
+                     | - BERT-based classifier                      |
+                     | (trained on Stage 1 positives + sampled negs)|
+                     | (optimized for precision)                    |
+                     +----------------------------------------------+
+                             |
+                             v
+                     +-------------------+
+                     |  Final Positives  |
+                     +-------------------+
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br>
+                            <br>
+
+                            <div>
+                                <h2 class="text-lg font-medium mb-4 text-black dark:text-white">Technologies Used</h2>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">Azure Databricks</span>
+                                    <span class="skill-tag">Machine Learning</span>
+                                    <span class="skill-tag">ETL Pipelines</span>
+                                    <span class="skill-tag">Power BI</span>
+                                    <span class="skill-tag">HDBSCAN</span>
+                                    <span class="skill-tag">Clustering</span>
+                                    <span class="skill-tag">NLP</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <footer class="mt-24 border-t border-zinc-100 px-0 py-4 dark:border-zinc-800">
+                <div class="flex items-center justify-center">
+                    <div class="text-xs text-zinc-500">
+                        <span>© 2024 Rahul Reddy Chappidi Venkata.</span>
+                        <span class="ml-2">Built with HTML, CSS, JS and YAML.</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
     </div>
-    <script src="../../script.js"></script>
+
+    <!-- Scripts -->
+    <script>
+        // Fix the data path issue for detail pages
+        window.isDetailPage = true;
+        window.rootPath = '../../';
+    </script>
+    <script src="../../assets/js/data.js"></script>
+    <script src="../../assets/js/theme.js"></script>
+    <script src="../../assets/js/animations.js"></script>
+    <script src="../../assets/js/main.js"></script>
 </body>
-</html>
+</html> 

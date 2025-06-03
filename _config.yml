@@ -1,21 +1,63 @@
-title: Your Site Title
-description: Your site description
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+title: "Rahul Reddy Chappidi Venkata Portfolio"
+description: "Personal portfolio website"
+url: "https://rahulcvr.github.io"
+baseurl: ""
 
 # Build settings
 markdown: kramdown
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
+highlighter: rouge
+permalink: pretty
 
-# Exclude from processing
+# Exclude files from Jekyll processing
 exclude:
+  - README.md
   - Gemfile
   - Gemfile.lock
   - node_modules
   - vendor
-  - .git/
-  - .github/
-  - README.md 
+  - .bundle
+  - .sass-cache
+  - .jekyll-cache
+  - .jekyll-metadata
+  - .git
+  - .gitignore
+
+# Include files that Jekyll normally excludes
+include:
+  - .nojekyll
+
+# Plugins (GitHub Pages compatible)
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections (not needed for this static site but keeping for compatibility)
+collections:
+
+# Sass/SCSS settings
+sass:
+  sass_dir: assets/css
+  style: compressed
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# GitHub Pages specific settings
+github: [metadata]
+
+# SEO settings
+author:
+  name: "Rahul Reddy Chappidi Venkata"
+  email: "rahulreddycv@gmail.com"
+
+# Social links for SEO
+social:
+  name: "Rahul Reddy Chappidi Venkata"
+  links:
+    - https://github.com/RahulCvr
+    - https://www.linkedin.com/in/rahulreddycv 

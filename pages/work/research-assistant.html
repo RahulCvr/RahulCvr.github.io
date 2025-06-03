@@ -3,114 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Assistant - Portfolio</title>
-    <link rel="stylesheet" href="../../styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
+    <title>Research Assistant - Department of Accountancy | Rahul Cv</title>
+    <meta name="description" content="Research Assistant experience at Department of Accountancy, UIUC">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.ico">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../assets/css/main.css">
+
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T5GK124G5X"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T5GK124G5X"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-T5GK124G5X');
-</script>
-<body>
-    <div class="container page-container">
-        <div class="breadcrumb">
-            <span class="back-arrow">◄</span> <a href="../../index.html">rcv</a> / <a href="../../work.html">work</a> / <span class="active">research assistant</span>
-        </div>
-        
-        <div class="work-header">
-            <div class="work-icon square-icon gray-icon"></div>
-            <div>
-                <h1 class="page-title">Research Assistant</h1>
-                <p class="work-company">Department of Accountancy, UIUC</p>
-                <p class="work-date">Mar 2024 - May 2024</p>
-            </div>
-        </div>
-
-        <div class="content-section">
-            <div class="impact-highlight">
-                <p>Aided advisors and students decision making with a data-driven, 
-                    alumni-informed course pathway recommendation tool.    </p>
-            </div>
-
-            <h2>Problem Statement</h2>
-            <ul class="feature-list">
-                <li>Students arrive with diverse career aspirations—whether entering industry, launching startups, 
-                    or pursuing graduate studies—and need tailored academic and extracurricular guidance.</li>
-                <li>The volume of course offerings and student-run clubs creates decision fatigue, 
-                    making it hard for students to narrow down the options that best support their individual goals.</li>
-                <li>Many valuable electives and niche organizations go unnoticed, so students inadvertently miss 
-                    out on opportunities that could accelerate their development.</li>
-                <li>As a result, “What courses should I take this semester or organizations should I join to reach my goal?” is the most common request advisors 
-                    receive.</li>
-            </ul>
-
-            <h2>What I Did</h2>
-            <div class="approach-section">
-                <ul class="feature-list">
-                    <li>Communicated with advisors and students to understand their needs.</li>
-                    <li>Gathered data, preprocessed and anonymized it for analysis.</li>
-                    <li>Built a recommendation tool that uses clustering to find similar alumni personas
-                        and recommend courses and organizations to students.
-                    </li>
-                    <li>Deployed the tool using streamlit on a on-prem server.</li>
-                    <li>Built Power BI dashboards to track cohort journey (graduation rate, first-job outcomes, salary, etc.)</li>
-                </ul>
-                
-                
-                <h3>Technical Implementation</h3>
-                <div class="architecture-diagram">
-                   <pre>                           
-                      +----------------------+
-                      |   Data Integration   |
-                      +----------------------+
-                                 |
-                                 v
-                    +---------------------------+
-                    |   Analysis & Insights     |
-                    | - Data cleaning &         |
-                    |   preprocessing           |
-                    | - Anonymization           |
-                    | - Alumni Cohort analysis  |
-                    | - KNN & clustering model  |
-                    +---------------------------+
-                                 |
-                                 v
-                      +----------------------+
-                      |      Delivery        |
-                      | - Streamlit frontend |
-                      +----------------------+ 
-                    </pre>
+    gtag('config', 'G-T5GK124G5X');
+    </script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white dark:bg-zinc-950">
+    <div class="min-h-screen w-full flex flex-col font-sans">
+        <div class="relative mx-auto w-full max-w-6xl flex-1 px-4 pt-20">
+            <!-- Header -->
+            <header class="mb-8 flex items-center justify-between">
+                <div>
+                    <a href="../../index.html" class="text-2xl font-medium text-black dark:text-white">
+                        Rahul Reddy Chappidi Venkata
+                    </a>
+                    <p class="text-lg text-zinc-600 dark:text-zinc-500">
+                        Data Scientist
+                    </p>
                 </div>
                 
-            </div>
+                <nav class="flex items-center space-x-6">
+                    <a href="../../index.html#overview" class="text-sm font-medium text-zinc-600 hover:text-black dark:text-zinc-400 dark:hover:text-white transition-colors">
+                        Overview
+                    </a>
+                    <a href="../../index.html#experience" class="text-sm font-medium text-zinc-600 hover:text-black dark:text-zinc-400 dark:hover:text-white transition-colors">
+                        Experience
+                    </a>
+                    <a href="../../index.html#skills" class="text-sm font-medium text-zinc-600 hover:text-black dark:text-zinc-400 dark:hover:text-white transition-colors">
+                        Skills
+                    </a>
+                    <a href="../../index.html#projects" class="text-sm font-medium text-zinc-600 hover:text-black dark:text-zinc-400 dark:hover:text-white transition-colors">
+                        Projects
+                    </a>
+                    <a href="../../index.html#education" class="text-sm font-medium text-zinc-600 hover:text-black dark:text-zinc-400 dark:hover:text-white transition-colors">
+                        Education
+                    </a>
+                    <a href="../../assets/resume/resume.pdf" target="_blank" class="text-sm font-medium text-zinc-600 hover:text-black dark:text-zinc-400 dark:hover:text-white transition-colors">
+                        Resume
+                    </a>
+                    
+                    <button id="theme-toggle" class="theme-toggle">
+                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path class="sun-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                            <path class="moon-icon hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                    </button>
+                </nav>
+            </header>
 
-            <!--
-            <h2>Impact & Metrics</h2>
-            <div class="metrics-section">
-                <div class="metric-card">
-                    <h3>Efficiency Gains</h3>
-                    <p>15 hours/week saved in data processing</p>
+            <!-- Main Content -->
+            <main class="space-y-24">
+                <div class="project-card">
+                    <div class="project-content" style="padding: 24px;">
+                        <div class="mb-8">
+                            <h1 class="text-2xl font-medium text-black dark:text-white mb-2">Research Assistant</h1>
+                            <p class="text-lg text-zinc-600 dark:text-zinc-400 mb-1">Department of Accountancy, UIUC</p>
+                            <p class="text-zinc-500 dark:text-zinc-500">Mar 2024 - May 2024</p>
+                        </div>
+
+                        <div class="space-y-8">
+                            <div>
+                                <h2 class="text-lg font-medium mb-4 text-black dark:text-white">Key Achievements</h2>
+                                <ul class="list-disc space-y-2 text-zinc-600 dark:text-zinc-400">
+                                    <li>Developed a course pathway recommendation tool using clustering on alumni data</li>
+                                    <li>Deployed a Streamlit app to provide interactive recommendations</li>
+                                    <li>Built Power BI dashboards to track student outcomes and course efficacy</li>
+                                    <li>Provided data-driven insights for academic decision making</li>
+                                </ul>
+                            </div>
+
+                            <br>
+                            <br>
+
+                            <div>
+                                <h2 class="text-lg font-medium mb-4 text-black dark:text-white">Problem Statement</h2>
+                                <ul class="list-disc space-y-2 text-zinc-600 dark:text-zinc-400">
+                                    <li>Students needed guidance on course selection to optimize career outcomes</li>
+                                    <li>Department required insights into which course combinations led to better job placements</li>
+                                    <li>Need for a scalable tool to automate course recommendations based on career goals</li>
+                                </ul>
+                            </div>
+
+                            <br>
+                            <br>
+
+                            <div>
+                                <h2 class="text-lg font-medium mb-4 text-black dark:text-white">Technical Implementation</h2>
+                                <ul class="list-disc space-y-2 text-zinc-600 dark:text-zinc-400">
+                                    <li>Cleaned and preprocessed alumni data including course histories and career outcomes</li>
+                                    <li>Applied clustering algorithms to identify successful course pathway patterns</li>
+                                    <li>Developed recommendation engine using similarity metrics and career alignment</li>
+                                    <li>Built interactive Streamlit web application for real-time recommendations</li>
+                                    <li>Created comprehensive Power BI dashboards for department leadership</li>
+                                    <li>Implemented automated data refresh pipelines for up-to-date insights</li>
+                                </ul>
+
+                                <br>
+
+                                <div class="mt-8">
+                                    <h3 class="text-base font-medium mb-4 text-black dark:text-white">System Architecture</h3>
+                                    <div class="architecture-diagram">
+                                        <pre>
+                       +----------------------+
+                       |   Data Integration   |
+                       +----------------------+
+                                  |
+                                  v
+                     +---------------------------+
+                     |   Analysis & Insights     |
+                     | - Data cleaning &         |
+                     |   preprocessing           |
+                     | - Anonymization           |
+                     | - Alumni Cohort analysis  |
+                     | - KNN & clustering model  |
+                     +---------------------------+
+                                  |
+                                  v
+                       +----------------------+
+                       |      Delivery        |
+                       | - Streamlit frontend |
+                       +----------------------+
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br>
+                            <br>
+
+                            <div>
+                                <h2 class="text-lg font-medium mb-4 text-black dark:text-white">Impact</h2>
+                                <ul class="list-disc space-y-2 text-zinc-600 dark:text-zinc-400">
+                                    <li>Enabled data-driven course selection for students</li>
+                                    <li>Provided department with actionable insights on curriculum effectiveness</li>
+                                    <li>Identified high-value course combinations for specific career paths</li>
+                                    <li>Streamlined advising process with automated recommendations</li>
+                                </ul>
+                            </div>
+
+                            <br>
+                            <br>
+
+                            <div>
+                                <h2 class="text-lg font-medium mb-4 text-black dark:text-white">Technologies Used</h2>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">Streamlit</span>
+                                    <span class="skill-tag">Clustering</span>
+                                    <span class="skill-tag">Power BI</span>
+                                    <span class="skill-tag">SQL</span>
+                                    <span class="skill-tag">Data Analysis</span>
+                                    <span class="skill-tag">Data Visualization</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            -->
+            </main>
 
-            <h2>Technologies Used</h2>
-            <div class="tag-list">
-                <span class="tag normal-tag">Python</span>
-                <span class="tag normal-tag">SQL</span>
-                <span class="tag normal-tag">Machine Learning</span>
-                <span class="tag normal-tag">ETL</span>
-                <span class="tag normal-tag">Streamlit</span>
-                <span class="tag normal-tag">Power BI</span>
-            </div>
+            <!-- Footer -->
+            <footer class="mt-24 border-t border-zinc-100 px-0 py-4 dark:border-zinc-800">
+                <div class="flex items-center justify-center">
+                    <div class="text-xs text-zinc-500">
+                        <span>© 2024 Rahul Reddy Chappidi Venkata.</span>
+                        <span class="ml-2">Built with HTML, CSS, JS and YAML.</span>
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
-    <script src="../../script.js"></script>
+
+    <!-- Scripts -->
+    <script>
+        // Fix the data path issue for detail pages
+        window.isDetailPage = true;
+        window.rootPath = '../../';
+    </script>
+    <script src="../../assets/js/data.js"></script>
+    <script src="../../assets/js/theme.js"></script>
+    <script src="../../assets/js/animations.js"></script>
+    <script src="../../assets/js/main.js"></script>
 </body>
-</html>
+</html> 

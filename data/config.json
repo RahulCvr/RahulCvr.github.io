@@ -1,0 +1,145 @@
+{
+  "site": {
+    "title": "Rahul Reddy Chappidi Venkata",
+    "description": "Personal portfolio website",
+    "author": "Rahul Reddy Chappidi Venkata",
+    "profession": "Data Scientist",
+    "url": "https://rahulcvr.github.io"
+  },
+  "social_links": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/RahulCvr",
+      "icon": "github"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/rahulreddycv",
+      "icon": "linkedin"
+    },
+    {
+      "name": "Email",
+      "url": "mailto:rahulreddycv@gmail.com",
+      "icon": "email"
+    },
+    {
+      "name": "Resume",
+      "url": "assets/resume/resume.pdf",
+      "icon": "document"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Data Scientist Intern",
+      "company": "University of Illinois at Urbana-Champaign - Cline Center for Advanced Social Research",
+      "start": "May 2024",
+      "end": "Present",
+      "description": "Built ETL pipelines for ML tasks, improved classification models, and automated data collection with agentic AI. Created Power BI dashboards for global users and engineered clustering to reduce duplicate data by 88%.",
+      "link": "https://www.clinecenter.illinois.edu/",
+      "learn_more": "pages/work/cline-center.html",
+      "image": "assets/images/cline-center-logo.png"
+    },
+    {
+      "title": "Research Assistant",
+      "company": "University of Illinois at Urbana-Champaign",
+      "start": "March 2024",
+      "end": "May 2024",
+      "description": "Conducted advanced research in machine learning and data analysis, contributing to academic publications and developing innovative algorithms for data processing.",
+      "link": "https://illinois.edu/",
+      "learn_more": "pages/work/research-assistant.html",
+      "image": "assets/images/uiuc-logo.png"
+    },
+    {
+      "title": "Data Analyst Intern",
+      "company": "Vedantu Learning",
+      "start": "Jul 2023",
+      "end": "Dec 2023",
+      "description": "Developed data visualization dashboards and performed statistical analysis on large datasets to drive business insights and decision-making processes.",
+      "link": "https://www.vedantu.com/",
+      "learn_more": "pages/work/vedantu.html",
+      "image": "assets/images/vedantu-logo.png"
+    }
+  ],
+  "skills": [
+    {
+      "title": "Programming Languages",
+      "order": 1,
+      "skills": "Python, Java, JavaScript, SQL"
+    },
+    {
+      "title": "Data Science & ML",
+      "order": 2,
+      "skills": "ETL Pipelines, Data Modeling, Product Analytics, Statistical Analysis, Hypothesis Testing, Feature Engineering, Predictive Modeling, Data Visualization, Deep Learning, Vector Databases"
+    },
+    {
+      "title": "Frameworks & Libraries",
+      "order": 3,
+      "skills": "TensorFlow, PyTorch, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn, Hugging Face, Transformers, Langchain, RAGs, LLMs"
+    },
+    {
+      "title": "Databases & Tools",
+      "order": 4,
+      "skills": "PostgreSQL, MongoDB, MySQL, Git, CI/CD, Docker, Jupyter, Apache Spark, Airflow, dbt, Snowflake, BigQuery, Databricks, Excel"
+    },
+    {
+      "title": "Cloud & Analytics",
+      "order": 5,
+      "skills": "AWS, Azure, Snowflake, Power BI, QuickSight, Looker Studio, Tableau, Excel"
+    },
+    {
+      "title": "Specializations",
+      "order": 6,
+      "skills": "Product Analytics, Natural Language Processing, Time Series Analysis, A/B Testing, ETL Pipelines, Agentic AI"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Random Forests from Scratch",
+      "description": "Implementing Random Forests Algorithm in Python from scratch to predict Tennis Australian Open winner.",
+      "link": "#",
+      "code_link": "https://github.com/RahulCvr/XGBoostFromScratch"
+    },
+    {
+      "name": "Neural Networks from Scratch",
+      "description": "Creating a Neural Network to classify handwritten digits (MNIST dataset) implemented from scratch.",
+      "link": "#",
+      "code_link": "https://github.com/RahulCvr/NeuralNetsFromScratch"
+    },
+    {
+      "name": "Credit Card Fraud Detection",
+      "description": "End-to-end credit card fraud detection MLOps pipeline with comprehensive data analysis.",
+      "link": "#",
+      "code_link": "https://github.com/rahulcvr/fraud-detection"
+    },
+    {
+      "name": "Smartphone Review Analysis",
+      "description": "Comprehensive analysis of smartphone reviews using natural language processing and sentiment analysis.",
+      "link": "https://github.com/rahulcvr/review-analysis",
+      "code_link": "https://github.com/rahulcvr/review-analysis"
+    },
+    {
+      "name": "App Performance Analytics",
+      "description": "Analyze app performance regressors and build a dashboard to track metrics and identify bottlenecks.",
+      "link": "https://github.com/rahulcvr/app-analytics",
+      "code_link": "https://github.com/rahulcvr/app-analytics"
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Illinois at Urbana-Champaign, (UIUC)",
+      "degree": "Master's of Science in Information Science & Management",
+      "start": "2023",
+      "end": "2025",
+      "gpa": "GPA - 4.0 / 4.0",
+      "image": "assets/images/uiuc-logo.png"
+    },
+    {
+      "institution": "Jawaharlal Nehru Technological University Hyderabad (JNTUH)",
+      "degree": "Bachelor's of Technology in Computer Science and Engineering",
+      "start": "2019",
+      "end": "2023",
+      "gpa": "GPA - 3.8 / 4.0",
+      "image": "assets/images/jntuh-logo.png"
+    }
+  ]
+} 

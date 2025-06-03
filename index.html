@@ -3,54 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Rahul Reddy Chappidi Venkata | Data Scientist Portfolio</title>
+    <meta name="description" content="Personal portfolio website showcasing data science projects and experience">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T5GK124G5X"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
 
-  gtag('config', 'G-T5GK124G5X');
-</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T5GK124G5X"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-T5GK124G5X');
+    </script>
     
-<body>
-    <div class="container">
-        <main class="profile-container">
-            <!-- Commenting out the image section as requested
-            <div class="profile-image-container">
-                <div class="profile-image">
+    <!-- Meta tags for SEO -->
+    <meta property="og:title" content="Rahul Reddy Chappidi Venkata | Data Scientist Portfolio">
+    <meta property="og:description" content="Personal portfolio website showcasing data science projects and experience">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rahulcvr.github.io">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body class="bg-white dark:bg-zinc-950">
+    <div class="min-h-screen w-full flex flex-col font-sans">
+        <div class="relative mx-auto w-full max-w-6xl flex-1 px-4 pt-20">
+            <!-- Header -->
+            <header class="mb-8 flex items-center justify-between">
+                <div>
+                    <a href="/" class="text-2xl font-medium text-black dark:text-white">
+                        <span class="hidden sm:inline">Rahul Reddy Chappidi Venkata</span>
+                        <span class="sm:hidden">Rahul Reddy</span>
+                    </a>
+                    <p class="text-lg text-zinc-600 dark:text-zinc-500">
+                        Data Scientist
+                    </p>
                 </div>
-            </div>
-            -->
-            <div class="profile-info">
-                <h1 class="name">Rahul Reddy CV</h1>
-                <p class="tagline">IM @ UIUC</p>
-                <p class="bio">Engineer & Entrepreneur. Data Scientist @ Cline</p>
-                <p class="bio">Learning skills to build a company that solves real-world problems. </p>
                 
-                <nav class="navigation">
-                    <ul>
-                        <li><a href="work.html">work</a></li>
-                        <li><a href="projects.html">projects</a></li>
-                        <li><a href="#resume">resume</a></li>
-                        <li class="social-links">
-                            <a href="https://github.com/" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://linkedin.com/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="mailto:contact@example.com" aria-label="Email"><i class="far fa-envelope"></i></a>
-                        </li>
-                    </ul>
+                <nav class="flex items-center space-x-6">
+                    <a href="#overview" class="nav-link">Overview</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#education" class="nav-link">Education</a>
+                    <a href="assets/resume/resume.pdf" target="_blank" class="nav-link">Resume</a>
+                    
+                    <button id="theme-toggle" class="theme-toggle">
+                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path class="sun-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                            <path class="moon-icon hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                    </button>
                 </nav>
-            </div>
-        </main>
+            </header>
+
+            <!-- Main Content -->
+            <main class="space-y-24 max-w-6xl mx-auto">
+                <!-- Overview Section -->
+                <section id="overview">
+                    <div class="flex-1">
+                        <p class="text-zinc-600 dark:text-zinc-400">
+                            I'm a grad student from UIUC majoring in Information Science and Management, with a bachelor's in Computer Science and Engineering.
+                            <br>
+                            <br>
+                            My experience spans building AI-agentic applications, generating data-driven insights to guide strategic business decisions, and applying strong product analytics to drive growth and innovation.
+                            <br>
+                            <br>
+                            I'm passionate about designing impactful, human-centered solutions. I thrive at the intersection of data, intelligent systems, and real-world problem-solving.
+                        </p>
+                    </div>
+                    <br>
+                    <div id="social-links" class="flex space-x-4 mt-6">
+                        <!-- Social links will be loaded dynamically -->
+                    </div>
+                </section>
+
+                <!-- Experience Section -->
+                <section id="experience">
+                    <h3 class="section-title">Experience</h3>
+                    <div id="experience-list" class="flex flex-col space-y-4">
+                        <!-- Experience items will be loaded dynamically -->
+                    </div>
+                </section>
+
+                <!-- Skills Section -->
+                <section id="skills">
+                    <h3 class="section-title">Skills & Technologies</h3>
+                    <div id="skills-list" class="flex flex-col space-y-4">
+                        <!-- Skills will be loaded dynamically -->
+                    </div>
+                </section>
+
+                <!-- Research Section -->
+                <section id="research">
+                    <h3 class="section-title">Research</h3>
+                    <div class="flex flex-col space-y-4">
+                        <div class="project-card mb-4">
+                            <div class="project-content" style="padding: 16px;">
+                                <div class="flex flex-col md:flex-row md:justify-between md:items-start">
+                                    <div>
+                                        <h4 class="font-normal dark:text-zinc-100" style="margin-bottom: 8px;">Understanding Evaluation Metrics for Summarization with LLMs</h4>
+                                        <p class="text-zinc-500 dark:text-zinc-400">A Comparative Study on the existing evaluation metrics for summarization, and our proposed approach.</p>
+                                        <div class="research-actions mt-3 flex flex-wrap gap-2">
+                                            <a href="assets/research/paper1.pdf" target="_blank" rel="noopener noreferrer" class="project-btn">
+                                                Read Paper
+                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-3 w-3">
+                                                    <path d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Projects Section -->
+                <section id="projects">
+                    <h3 class="section-title">Selected Projects</h3>
+                    <div id="projects-grid" class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                        <!-- Projects will be loaded dynamically -->
+                    </div>
+                </section>
+
+                <!-- Education Section -->
+                <section id="education">
+                    <h3 class="section-title">Education</h3>
+                    <div id="education-list" class="flex flex-col space-y-4">
+                        <!-- Education items will be loaded dynamically -->
+                    </div>
+                </section>
+
+                <section id="contact">
+                    <h3 class="section-title">Contact</h3>
+                    <div id="contact-list" class="flex flex-col space-y-4">
+                        <p>I'm always open to new opportunities, exciting projects, or simply connecting with like-minded professionals. 
+                        Whether you're looking to collaborate on a tech initiative, discuss AI-driven solutions, or just want to say hello — I'd love to hear from you!</p>
+
+                        <p>Email: rahulreddycv@gmail.com</p>
+                    </div>
+                </section>
+            </main>
+
+            
+
+            <!-- Footer -->
+            <footer class="mt-24 border-t border-zinc-100 px-0 py-4 dark:border-zinc-800">
+                <div class="flex items-center justify-between">
+                    <div class="text-xs text-zinc-500">
+                        <span>© <span id="current-year"></span> Rahul Cv.</span>
+                    </div>
+                    <div id="footer-social-links" class="flex space-x-4">
+                        <!-- Footer social links will be loaded dynamically -->
+                    </div>
+                </div>
+            </footer>
+        </div>
     </div>
-    
-    <script src="script.js"></script>
+
+    <!-- Scripts -->
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
-</html>
+</html> 
