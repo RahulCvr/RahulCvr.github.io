@@ -3,7 +3,13 @@ class ThemeManager {
     constructor() {
         this.themeToggle = null;
         this.html = document.documentElement;
-        this.currentTheme = localStorage.getItem('theme') || 'light';
+        
+        // Always default to light theme if no preference is set
+        const savedTheme = localStorage.getItem('theme');
+        this.currentTheme = savedTheme || 'light';
+        
+        // Apply the theme immediately
+        this.applyTheme(this.currentTheme);
         
         this.init();
     }
@@ -25,13 +31,13 @@ class ThemeManager {
             return;
         }
 
-        // Apply initial theme
-        this.applyTheme(this.currentTheme);
+        // Update the toggle UI to match current theme
+        this.updateThemeIcon(this.currentTheme);
 
         // Add click handler
         this.themeToggle.addEventListener('click', () => this.toggleTheme());
 
-        // Listen for system theme changes
+        // Listen for system theme changes (but don't auto-apply them)
         this.setupSystemThemeListener();
     }
 
@@ -80,14 +86,13 @@ class ThemeManager {
             // Only auto-switch if user hasn't set a preference
             if (!localStorage.getItem('theme')) {
                 const systemTheme = e.matches ? 'dark' : 'light';
-                this.applyTheme(systemTheme);
+                this.applyTheme('light'); // Always default to light
             }
         });
 
-        // Apply system theme if no preference is set
+        // Apply light theme by default if no preference is set
         if (!localStorage.getItem('theme')) {
-            const systemTheme = mediaQuery.matches ? 'dark' : 'light';
-            this.applyTheme(systemTheme);
+            this.applyTheme('light');
         }
     }
 
