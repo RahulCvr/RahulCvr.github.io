@@ -28,6 +28,11 @@
       "icon": "document"
     }
   ],
+  "spotlight": {
+    "title": "👋 Hey There!",
+    "content": "I'm currently updating my website based on user behavior and feedback. You might encounter some broken links or sections that are still under construction. Thanks for your patience!",
+    "show": true
+  },
   "experience": [
     {
       "title": "Data Scientist Intern",
@@ -94,6 +99,24 @@
   ],
   "projects": [
     {
+      "name": "The Scoop",
+      "description": "A web app to get the latest news and updates from the world.",
+      "link": "#",
+      "code_link": "https://github.com/rahulcvr/theScoop"
+    },
+    {
+      "name": "Mock Social-App A/B Testing",
+      "description": "Does the 'Reactions Bar' of a mock social app improve user engagement?",
+      "link": "#",
+      "code_link": "https://github.com/rahulcvr/mock-social-app"
+    },
+    {
+      "name": "Analyzing the trends of Smartphone based on online reviews",
+      "description": "Comprehensive analysis of smartphone reviews using natural language processing and sentiment analysis.",
+      "link": "#",
+      "code_link": "https://github.com/rahulcvr/SmartphoneTrends"
+    },
+    {
       "name": "Random Forests from Scratch",
       "description": "Implementing Random Forests Algorithm in Python from scratch to predict Tennis Australian Open winner.",
       "link": "#",
@@ -106,22 +129,16 @@
       "code_link": "https://github.com/RahulCvr/NeuralNetsFromScratch"
     },
     {
+      "name": "Gym Occupancy Detection",
+      "description": "Comprehensive analysis of gym occupancy using computer vision and machine learning.",
+      "link": "#",
+      "code_link": "https://github.com/rahulcvr/gym-occupancy-detection"
+    },
+    {
       "name": "Credit Card Fraud Detection",
       "description": "End-to-end credit card fraud detection MLOps pipeline with comprehensive data analysis.",
       "link": "#",
       "code_link": "https://github.com/rahulcvr/fraud-detection"
-    },
-    {
-      "name": "Smartphone Review Analysis",
-      "description": "Comprehensive analysis of smartphone reviews using natural language processing and sentiment analysis.",
-      "link": "https://github.com/rahulcvr/review-analysis",
-      "code_link": "https://github.com/rahulcvr/review-analysis"
-    },
-    {
-      "name": "App Performance Analytics",
-      "description": "Analyze app performance regressors and build a dashboard to track metrics and identify bottlenecks.",
-      "link": "https://github.com/rahulcvr/app-analytics",
-      "code_link": "https://github.com/rahulcvr/app-analytics"
     }
   ],
   "education": [

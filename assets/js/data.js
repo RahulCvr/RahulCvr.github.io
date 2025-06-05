@@ -154,6 +154,14 @@ class DataLoader {
         return this.data?.social_links || [];
     }
 
+    getSpotlight() {
+        return this.data?.spotlight || {
+            show: false,
+            title: '',
+            content: ''
+        };
+    }
+
     getExperience() {
         return this.data?.experience || [];
     }

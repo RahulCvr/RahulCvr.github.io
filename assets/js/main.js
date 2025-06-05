@@ -24,8 +24,8 @@ class PortfolioApp {
                 return;
             }
 
-            // Render content
-            this.renderContent();
+            // Render content - ensure we await the async renderContent
+            await this.renderContent();
             
             // Setup interactions
             this.setupInteractions();
@@ -40,13 +40,62 @@ class PortfolioApp {
         }
     }
 
-    renderContent() {
+    async renderContent() {
+        // Make sure data is loaded before rendering
+        if (!this.data) {
+            this.data = await window.dataLoader.loadData();
+        }
+        
         this.renderSocialLinks();
+        this.renderSpotlight();
         this.renderExperience();
         this.renderSkills();
         this.renderProjects();
         this.renderEducation();
         this.updateFooter();
+    }
+
+    async renderSpotlight() {
+        const spotlightContainer = document.getElementById('spotlight');
+        if (!spotlightContainer) return;
+
+        try {
+            // Ensure data is loaded
+            if (!this.data) {
+                this.data = await window.dataLoader.loadData();
+            }
+
+            const spotlight = window.dataLoader.getSpotlight();
+            
+            if (!spotlight?.show) {
+                spotlightContainer.remove();
+                return;
+            }
+
+            const { title, content } = spotlight;
+            
+            // Make sure the container is visible
+            spotlightContainer.classList.remove('hidden');
+            
+            // Find the content container inside the spotlight
+            const contentContainer = spotlightContainer.querySelector('.relative.z-10');
+            if (!contentContainer) return;
+            
+            // Set the content
+            contentContainer.innerHTML = `
+                <div class="flex items-start">
+                    <div class="flex-1">
+                        <h3 class="text-lg font-semibold text-zinc-700 dark:text-zinc-300 mb-2">${title}</h3>
+                        <p class="text-zinc-700 dark:text-zinc-300">
+                            ${content}
+                        </p>
+                    </div>
+                </div>
+            `;
+        } catch (error) {
+            console.error('Error rendering spotlight:', error);
+            spotlightContainer.remove();
+        }
     }
 
     renderSocialLinks() {
