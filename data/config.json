@@ -105,6 +105,12 @@
       "code_link": "https://github.com/rahulcvr/theScoop"
     },
     {
+      "name": "Query your notes - RAG from Scratch",
+      "description": "A web app that acts as your second brain. Use the chat to ask anything from your personal notes, stored locally.",
+      "link": "https://rclt-base.streamlit.app/",
+      "code_link": "https://github.com/rahulcvr/rclt-base"
+    },
+    {
       "name": "Mock Social-App A/B Testing",
       "description": "Does the 'Reactions Bar' of a mock social app improve user engagement?",
       "link": "#",
