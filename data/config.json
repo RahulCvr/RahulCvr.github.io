@@ -31,11 +31,11 @@
   "spotlight": {
     "title": "👋 Hey There!",
     "content": "I'm currently updating my website based on user behavior and feedback. You might encounter some broken links or sections that are still under construction. Thanks for your patience!",
-    "show": true
+    "show": false
   },
   "experience": [
     {
-      "title": "Data Scientist Intern",
+      "title": "Data Scientist",
       "company": "University of Illinois at Urbana-Champaign - Cline Center for Advanced Social Research",
       "start": "May 2024",
       "end": "Present",
@@ -55,10 +55,10 @@
       "image": "assets/images/uiuc-logo.png"
     },
     {
-      "title": "Data Analyst Intern",
+      "title": "Machine Learning Engineer",
       "company": "Vedantu Learning",
-      "start": "Jul 2023",
-      "end": "Dec 2023",
+      "start": "Jul 2022",
+      "end": "Dec 2022",
       "description": "Developed data visualization dashboards and performed statistical analysis on large datasets to drive business insights and decision-making processes.",
       "link": "https://www.vedantu.com/",
       "learn_more": "pages/work/vedantu.html",
@@ -84,17 +84,17 @@
     {
       "title": "Databases & Tools",
       "order": 4,
-      "skills": "PostgreSQL, MongoDB, MySQL, Git, CI/CD, Docker, Jupyter, Apache Spark, Airflow, dbt, Snowflake, BigQuery, Databricks, Excel"
+      "skills": "PostgreSQL, MongoDB, MySQL, Git, CI/CD, Docker, Kubernetes, Jupyter, Apache Zookeeper, Apache Kafka, Apache Spark, Apache Flink, Apache Hive, Apache Cassandra, Apache Airflow, dbt, BigQuery, Databricks, Excel"
     },
     {
       "title": "Cloud & Analytics",
       "order": 5,
-      "skills": "AWS, Azure, Snowflake, Power BI, QuickSight, Looker Studio, Tableau, Excel"
+      "skills": "AWS, Azure, Power BI, Tableau, Excel"
     },
     {
       "title": "Specializations",
       "order": 6,
-      "skills": "Product Analytics, Natural Language Processing, Time Series Analysis, A/B Testing, ETL Pipelines, Agentic AI"
+      "skills": "Product Analytics, Causal Inference, Natural Language Processing, Time Series Analysis, A/B Testing, ETL Pipelines, Agentic AI"
     }
   ],
   "projects": [
@@ -103,6 +103,12 @@
       "description": "A web app to get the latest news and updates from the world.",
       "link": "#",
       "code_link": "https://github.com/rahulcvr/theScoop"
+    },
+    {
+      "name": "RAG Based Knowledge Management",
+      "description": "Knowledge management tool which uses RAG to answer questions about the natural language query.",
+      "link": "https://rclt-base.streamlit.app/",
+      "code_link": "https://github.com/rahulcvr/rclt-base"
     },
     {
       "name": "Mock Social-App A/B Testing",
@@ -121,6 +127,18 @@
       "description": "Implementing Random Forests Algorithm in Python from scratch to predict Tennis Australian Open winner.",
       "link": "#",
       "code_link": "https://github.com/RahulCvr/XGBoostFromScratch"
+    },
+    {
+      "name": "Movie Recommendation System",
+      "description": "A movie recommendation system that uses collaborative filtering to recommend movies to users based on their viewing history.",
+      "link": "#",
+      "code_link": "https://github.com/rahulcvr/movie-recommendation-system"
+    },
+    {
+      "name": "Workout Tracking Application",
+      "description": "A workout tracking application that allows users to track their workouts and progress.",
+      "link": "#",
+      "code_link": "https://github.com/rahulcvr/workout-tracking-application"
     },
     {
       "name": "Neural Networks from Scratch",

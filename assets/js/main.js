@@ -323,6 +323,91 @@ class PortfolioApp {
                 window.animationManager.refreshSpotlightEffects();
             }
         }, 100);
+        
+        // Setup breathing highlight effect
+        this.setupBreathingHighlight();
+    }
+
+    setupBreathingHighlight() {
+        // Find the email element and add breathing effect
+        const emailElement = document.querySelector('.breathing-highlight');
+        if (!emailElement) return;
+
+        // Create the breathing animation using JavaScript
+        let breathingInterval;
+        let currentOpacity = 0.15;
+        let increasing = true;
+        
+        const startBreathing = () => {
+            breathingInterval = setInterval(() => {
+                if (increasing) {
+                    currentOpacity += 0.005;
+                    if (currentOpacity >= 0.3) {
+                        increasing = false;
+                    }
+                } else {
+                    currentOpacity -= 0.005;
+                    if (currentOpacity <= 0.15) {
+                        increasing = true;
+                    }
+                }
+                
+                // Apply the breathing effect
+                emailElement.style.backgroundColor = `rgba(24, 119, 242, ${currentOpacity})`;
+                emailElement.style.boxShadow = `0 0 ${5 + (currentOpacity - 0.15) * 50}px rgba(24, 119, 242, ${currentOpacity + 0.1})`;
+            }, 50);
+        };
+
+        const stopBreathing = () => {
+            if (breathingInterval) {
+                clearInterval(breathingInterval);
+                breathingInterval = null;
+            }
+        };
+
+        // Style the element
+        emailElement.style.padding = '3px 8px';
+        emailElement.style.borderRadius = '6px';
+        emailElement.style.display = 'inline-block';
+        emailElement.style.transition = 'all 0.3s ease';
+        emailElement.style.cursor = 'pointer';
+
+        // Start the breathing effect
+        startBreathing();
+
+        // Add hover effects
+        emailElement.addEventListener('mouseenter', () => {
+            stopBreathing();
+            emailElement.style.backgroundColor = 'rgba(24, 119, 242, 0.4)';
+            emailElement.style.boxShadow = '0 0 20px rgba(24, 119, 242, 0.5)';
+        });
+
+        emailElement.addEventListener('mouseleave', () => {
+            currentOpacity = 0.15;
+            increasing = true;
+            startBreathing();
+        });
+
+        // Add click to copy email functionality
+        emailElement.addEventListener('click', async () => {
+            try {
+                await navigator.clipboard.writeText('rahulreddycv@gmail.com');
+                
+                // Show feedback
+                const originalText = emailElement.textContent;
+                emailElement.textContent = 'Copied!';
+                emailElement.style.backgroundColor = 'rgba(34, 197, 94, 0.3)';
+                emailElement.style.boxShadow = '0 0 15px rgba(34, 197, 94, 0.4)';
+                
+                setTimeout(() => {
+                    emailElement.textContent = originalText;
+                    emailElement.style.backgroundColor = `rgba(24, 119, 242, ${currentOpacity})`;
+                    emailElement.style.boxShadow = `0 0 ${5 + (currentOpacity - 0.15) * 50}px rgba(24, 119, 242, ${currentOpacity + 0.1})`;
+                }, 1500);
+            } catch (err) {
+                console.log('Failed to copy email to clipboard');
+            }
+        });
     }
 
     // Public methods for external access
