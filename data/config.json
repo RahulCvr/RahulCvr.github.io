@@ -105,8 +105,8 @@
       "code_link": "https://github.com/rahulcvr/theScoop"
     },
     {
-      "name": "RAG Based Knowledge Management",
-      "description": "Knowledge management tool which uses RAG to answer questions about the natural language query.",
+      "name": "Query your notes - RAG from Scratch",
+      "description": "A web app that acts as your second brain. Use the chat to ask anything from your personal notes, stored locally.",
       "link": "https://rclt-base.streamlit.app/",
       "code_link": "https://github.com/rahulcvr/rclt-base"
     },
